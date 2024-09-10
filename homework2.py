@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
 
+#### Problem 1
 # Define the neural network model
 class LogicNet(nn.Module):
     def __init__(self):
@@ -98,6 +99,7 @@ verification_result = torch.equal(test_outputs_reshaped, expected_outputs)
 print("Verification: ", verification_result)
 
 
+#### Problem 2
 # Define the neural network model based on the given weights and biases
 class CustomNN(nn.Module):
     def __init__(self):
